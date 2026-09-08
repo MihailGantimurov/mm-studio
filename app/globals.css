@@ -40,4 +40,75 @@
 
 .restored-stage{aspect-ratio:1000/490;min-height:0}.restored-word{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.restored-stage canvas{position:absolute;inset:0}.restored-stage .lamp-letters{filter:drop-shadow(5px 7px 0 #555e55) drop-shadow(4px 6px 0 #252b26)}.restored-stage .lamp-amp{fill:#d9fa69}.restored-stage .three-replay{bottom:-24px}.hero-bottom{margin-top:48px}@media(max-width:640px){.restored-stage{aspect-ratio:1000/540;min-height:0}.hero-bottom{margin-top:42px}}
 
-.restored-stage{aspect-ratio:1000/710}@media(max-width:640px){.restored-stage{aspect-ratio:1000/710}}
+.restored-stage{aspect-ratio:1000/710}
+
+/* Keep the animated scene at a deliberate size, independent of monitor width. */
+.header,.hero,.work-section,.studio-section,footer{max-width:1240px;padding-left:32px;padding-right:32px}
+.header{height:80px}
+.hero{padding-top:28px;padding-bottom:32px;overflow:visible}
+.hero-top{gap:24px}
+.hero-top p{margin:0}
+.hero-main{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);align-items:center;gap:24px;min-height:420px}
+.hero-copy{position:relative;z-index:2;padding:28px 0}
+.hero h1{font-size:clamp(38px,4.1vw,58px);line-height:1.05;letter-spacing:-2.5px;margin:0 0 24px}
+.hero-description{font-size:17px;line-height:1.7;color:#bac0c7;max-width:370px;margin:0 0 28px}
+.hero-copy .pill{padding:18px 24px;font-size:14px;min-height:54px}
+.hero-scene{width:100%;max-width:560px;justify-self:end;min-width:0}
+.hero-scene .restored-stage{width:100%;aspect-ratio:1000/710;min-height:0;margin:0}
+.hero-scene .three-replay{bottom:-26px;padding:8px 0;font-size:11px;min-height:36px}
+.hero-bottom{margin-top:16px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:nowrap}
+.hero-bottom .scroll-cue{margin:0;font-size:10px}
+.motion-controls{margin-left:0;flex-shrink:0}
+.motion-controls button{width:40px;height:40px}
+.reel-section{max-width:924px;padding:20px 32px 80px;margin:0 auto}
+.reel-frame{height:auto;aspect-ratio:16/9;width:100%;border:1px solid #ffffff1c;border-radius:10px;background:#080a0d}
+.reel-frame video{display:block;object-fit:contain;opacity:1}
+.reel-label{top:20px;left:22px;font-size:11px;text-shadow:0 1px 4px #000}
+.reel-play{width:96px;height:96px;gap:8px;backdrop-filter:none;background:#0b0d10a6}
+.reel-play>span{font-size:11px}
+.section-heading h2,.studio-heading h2{font-size:clamp(38px,4.4vw,60px);letter-spacing:-2px}
+.work-section,.studio-section{padding-bottom:88px}
+.studio-section{gap:48px}
+.contact-section{padding-left:max(32px,calc((100vw - 1176px)/2));padding-right:max(32px,calc((100vw - 1176px)/2))}
+.contact-section h2{font-size:clamp(46px,7vw,88px);letter-spacing:-3px}
+.film-dialog{width:min(960px,calc(100vw - 40px))!important;max-width:960px!important}
+.film-player{height:min(52dvh,520px)}
+@media(min-width:761px) and (max-width:1050px){
+  .hero-main{min-height:350px;gap:12px;grid-template-columns:1fr 1fr}
+  .hero h1{font-size:clamp(32px,4.2vw,43px);letter-spacing:-1.7px}
+  .hero-description{font-size:15px;max-width:310px}
+  .hero-copy .pill{padding:16px 18px;font-size:13px;gap:9px}
+  .hero-copy .pill>span{margin-left:0}
+}
+@media(max-width:760px){
+  .header,.hero,.work-section,.studio-section,footer{padding-left:24px;padding-right:24px}
+  .header{height:72px}
+  .header nav{gap:20px;font-size:13px}
+  .hero{padding-top:24px;padding-bottom:24px}
+  .hero-index{display:none}
+  .hero-main{grid-template-columns:1fr;gap:0;min-height:0}
+  .hero-copy{padding:26px 0 0}
+  .hero h1{font-size:clamp(36px,7vw,48px);letter-spacing:-2px;margin-bottom:16px}
+  .hero-description{font-size:15px;line-height:1.65;max-width:420px;margin-bottom:20px}
+  .hero-copy .pill{padding:15px 20px;min-height:50px}
+  .hero-scene{max-width:360px;justify-self:center;margin-top:0}
+  .hero-bottom{margin-top:20px}
+  .hero-scene .three-replay{bottom:-24px}
+  .reel-section{padding:12px 24px 60px;max-width:680px}
+  .reel-label{top:14px;left:16px;font-size:10px}
+  .reel-play{width:76px;height:76px;gap:5px}
+  .reel-play>svg{width:22px;height:22px}
+  .reel-play>span{font-size:10px}
+  .film-dialog{width:calc(100vw - 24px)!important;max-height:90dvh}
+  .film-player{height:auto;max-height:55dvh;min-height:0}
+}
+@media(max-width:440px){
+  .header,.hero,.work-section,.studio-section,footer{padding-left:20px;padding-right:20px}
+  .hero-top .eyebrow{font-size:10px;letter-spacing:1px}
+  .hero-scene{max-width:300px}
+  .hero-bottom{gap:8px;margin-top:18px}
+  .hero-bottom .scroll-cue{font-size:9px;letter-spacing:.8px;gap:8px}
+  .motion-controls{gap:4px}
+  .motion-controls button{width:38px;height:38px}
+  .reel-section{padding-left:20px;padding-right:20px}
+}
